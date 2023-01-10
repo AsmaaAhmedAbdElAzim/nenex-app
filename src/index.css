@@ -1,13 +1,177 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap');
+:root{
+--mainBackground:#131722;
+--lightbackground:#24baef;
+--fontColor:#fff;
+--borderColor:#a8a8a83d;
+--borderHight:1px;
+--secondFontColor:#949cb0;
+--bgTrensparent:rgba(36,186,293,.6);
+--fontFamly:'Montserrat Alternates', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: var(--mainBackground);
+    font-family:var(--fontFamly);
+    color:var(--fontColor);
 }
+.social{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.myinput{
+    background-color: transparent;
+    border: solid 1px var(--borderColor);
+    color: var(--fontColor) !important;
+}
+.myinput:focus{
+    background-color: transparent;
+
+}
+.register{
+    background-color: var(--lightbackground);
+    padding: 7px 20px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+
+.border{
+    height: 1px;
+    background-color: var(--borderColor);
+}
+
+.vote{
+   
+    background-color: var(--lightbackground);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--fontColor); 
+}
+a{
+    text-decoration: none;
+    color: var(--fontColor);
+}
+.movie h3{
+
+    color: var(--fontColor);
+    
+}
+.captionDetails .gen{
+    background-color: var(--lightbackground);
+    color: var(--fontColor);
+    display: inline-block;
+    margin: 5px ;
+    
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+.whached button{
+    background-color: var(--lightbackground);
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--fontColor);
+    border: 1px solid var(--lightbackground);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.whached button:hover{
+    background-color: var(--mainBackground);
+    
+}
+.whached a:hover{
+    
+    color: var(--lightbackground);
+}
+.offline{
+    background-color: var(--mainBackground);
+    box-shadow: 10px 10px 10px var(--lightbackground);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 99999;
+
+}
+.loading{
+    background-color: var(--mainBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color:var(--lightbackground);
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  .logout{
+    cursor: pointer;
+  }
+  a:hover{
+    color: #fff;
+  }
+  input:focus{
+    background-color: transparent;
+  }
+  .active{
+     color:var(--lightbackground)
+  }
+  nav{
+    background-color: var(--mainBackground) !important;
+   
+    box-shadow: 5px 5px 5px #24baef;
+  }
+  
